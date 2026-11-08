@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lymore – Pouch mini 6 motif kekinian</title>
-<meta name="description" content="Lymore menjual pouch mini estetik berbahan polyester dengan resleting dan gantungan cincin, seharga Rp12.000. Pilih motif favoritmu dan pesan.">
+<title>Lymore – Selected Pouch Collection</title>
+<meta name="description" content="Lymore menjual pouch mini estetik yang diperiksa satu per satu sebelum dikirim. Pilih motif, pesan lewat WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&family=Fraunces:ital,wght@1,600&display=swap" rel="stylesheet">
 <style>
 :root{
   --lilac:#E8E1F4; --plum:#3A2A5C; --ink:#1E1733; --blush:#F6CAD6; --sage:#A9C7B4; --paper:#FBF9FE;
@@ -86,6 +86,10 @@ nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 0}
 .ci button{border:2px solid var(--plum);background:#fff;color:var(--plum);border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:1rem}
 .ci .del{border:0;width:auto;height:auto;border-radius:0;text-decoration:underline;font:inherit;margin-left:8px}
 .f label{display:block;font-weight:500;margin-top:10px}
+.f select{width:100%;font:inherit;padding:10px;border:2px solid var(--lilac);border-radius:12px;background:#fff}
+.f .opt{display:flex;gap:8px;align-items:center;font-weight:400;margin-top:6px}
+.f .opt input{width:auto}
+.sum{display:flex;justify-content:space-between;margin:2px 0}
 .f input,.f textarea{width:100%;font:inherit;padding:10px;border:2px solid var(--lilac);border-radius:12px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .card{background:#fff;border:2px solid var(--lilac);border-radius:26px;padding:18px;display:flex;flex-direction:column}
@@ -128,6 +132,98 @@ footer a{display:block}
   nav a{margin-left:14px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ===== Tampilan variatif ===== */
+em{font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600}
+body{background:#FBF9FE}
+h1{font-size:clamp(2.8rem,8vw,5.4rem);line-height:.98}
+.hero{position:relative;overflow:hidden;padding-bottom:84px}
+.hero::before,.hero::after{content:"";position:absolute;width:70px;height:70px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z'/%3E%3C/svg%3E") no-repeat center/contain;opacity:.9}
+.hero::before{top:90px;left:46%}
+.hero::after{bottom:36px;left:6%;width:44px;height:44px}
+.hero h1 em{background:linear-gradient(transparent 60%,var(--blush) 60%);padding:0 6px}
+.hero p{margin:20px 0 16px}
+.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.chips li{background:#fff;border-radius:999px;padding:5px 14px;font-weight:700;color:var(--plum)}
+.hero-art img{width:190px;border:5px solid #fff}
+.stripw{overflow:hidden;padding:22px 0 8px}
+.strip,.track{white-space:nowrap}
+.stripw .track{display:inline-block;background:var(--plum);color:#fff;padding:12px 0;font-family:var(--head);font-weight:700;font-size:1.05rem;animation:run 32s linear infinite}
+.track span{margin:0 18px}
+.track span:nth-child(even){color:var(--blush)}
+@keyframes run{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.stripw .track{animation:none}}
+
+#pilih{background:radial-gradient(circle at 1px 1px,#e8e1f4 1.5px,transparent 0) 0 0/22px 22px}
+#pilih .wrap>h2,#pilih .lead{text-align:center;margin-left:auto;margin-right:auto}
+#pilih h2{font-size:clamp(2rem,5vw,3.4rem)}
+.card{transition:transform .2s}
+.card:hover{transform:translateY(-6px) rotate(-.6deg)}
+.card:nth-child(1){background:#FCE4EA;border-color:#F6CAD6}
+.card:nth-child(2){background:#FFF1F3;border-color:#F6CAD6}
+.card:nth-child(3){background:#FFF6C9;border-color:#F3E08A}
+.card:nth-child(4){background:#EDE6FA;border-color:#C9B8EA}
+.card:nth-child(5){background:#FFEFE0;border-color:#F6CAD6}
+.card:nth-child(6){background:#F2ECFB;border-color:#C9B8EA}
+.card h3{font-size:1.6rem}
+.price{background:var(--plum);color:#fff;padding:4px 14px;border-radius:999px;transform:rotate(-3deg);font-size:1.1rem}
+.card .btn.add{background:#fff;color:var(--plum);border:2px solid var(--plum)}
+.card .btn.add:hover{background:var(--plum);color:#fff}
+
+#info{background:#fff}
+#info h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.spec{gap:12px}
+.spec li{background:var(--lilac);border:0;border-radius:16px;padding:12px 16px}
+.spec li:nth-child(3n+2){background:#FCE4EA}
+.spec li:nth-child(3n){background:#DDF0E5}
+
+.dark{background:var(--plum);color:#fff;border-radius:44px;margin:30px 12px}
+.dark h2{color:#fff;font-size:clamp(2.2rem,6vw,4rem);max-width:16ch;line-height:1}
+.dark h2 em{color:var(--blush)}
+.dark .lead{color:#e8e1f4;font-size:1.1rem}
+.why-grid{counter-reset:w}
+.why-item{counter-increment:w;border-top:0;padding-top:0}
+.why-item::before{content:"0" counter(w);font-family:var(--head);font-size:3.6rem;font-weight:800;line-height:1;display:block;color:var(--blush);margin-bottom:6px}
+.why-item:nth-child(2)::before{color:var(--sage)}
+.why-item:nth-child(3)::before{color:#C9B8EA}
+.dark .why-item h3{color:#fff;font-size:1.4rem}
+
+.rv{background:#F3EEFA}
+.rv .wrap>h2,.rv .lead{text-align:center;margin-left:auto;margin-right:auto}
+.rev{border-radius:26px 26px 26px 6px;transition:transform .2s}
+.rev::before{content:"\201C";font-family:Fraunces,Georgia,serif;font-size:3.4rem;line-height:.6;display:block;color:var(--plum)}
+.rev:nth-child(1){background:#FCE4EA;transform:rotate(-1.5deg)}
+.rev:nth-child(2){background:#FFF6C9;transform:rotate(1deg);border-radius:26px 26px 6px 26px}
+.rev:nth-child(3){background:#DDF0E5;transform:rotate(-.8deg)}
+.rev strong{font-family:var(--head)}
+
+#cara h2{font-size:clamp(2rem,5vw,3rem)}
+.steps li{border-radius:26px;padding:22px;font-weight:500}
+.steps li::before{font-size:3.4rem;line-height:1;margin-bottom:6px}
+.steps li:nth-child(1){background:#FCE4EA;transform:rotate(-1.2deg)}
+.steps li:nth-child(2){background:#FFF6C9;transform:rotate(1deg)}
+.steps li:nth-child(3){background:#DDF0E5;transform:rotate(-1deg)}
+.steps li:nth-child(4){background:#E8E1F4;transform:rotate(1.2deg)}
+
+#tentang .wrap{background:var(--blush);border-radius:40px;padding:48px 44px;max-width:960px}
+#tentang h2{font-size:clamp(2rem,5vw,3.2rem)}
+#tentang .lead{font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600;font-size:1.25rem;line-height:1.5;max-width:none;color:var(--plum)}
+#tentang p{margin-bottom:8px}
+
+#kebijakan{background:#fff}
+#kebijakan h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.pol details.pp{background:var(--paper);border:2px solid var(--lilac);border-radius:20px;padding:0;margin-bottom:12px}
+.pol details.pp summary{padding:16px 20px;font-family:var(--head);font-size:1.15rem;display:flex;justify-content:space-between;align-items:center;list-style:none}
+.pol details.pp summary::-webkit-details-marker{display:none}
+.pol details.pp summary::after{content:"+";font-size:1.6rem;color:var(--plum)}
+.pol details.pp[open]{background:#fff;border-color:var(--plum)}
+.pol details.pp[open] summary::after{content:"\2212"}
+.pbody{padding:0 20px 8px}
+@media(max-width:760px){
+  .dark{margin:20px 6px;border-radius:30px}
+  #tentang .wrap{padding:30px 22px;border-radius:28px}
+  .hero::before{left:78%;top:60px}
+}
 </style>
 </head>
 <body>
@@ -141,8 +237,9 @@ footer a{display:block}
     </header>
     <div class="hero-grid">
       <div>
-        <h1>Pouch mini yang diperiksa satu per satu.</h1>
+        <h1>Selected <em>Pouch</em> Collection</h1>
         <p>Tempat make up, kabel, dan barang kecil lainnya, dengan pemeriksaan kualitas sebelum dikirim, jadi tidak ada barang cacat sampai ke tanganmu. Cocok untuk mahasiswi dan pelajar yang sering membawa tas ke mana-mana.</p>
+        <ul class="chips"><li>Rp12.000</li><li>6 motif pastel</li><li>20 gram</li></ul>
         <a class="btn" href="#pilih">Lihat 6 motif</a>
       </div>
       <div class="hero-art" aria-hidden="true">
@@ -154,10 +251,11 @@ footer a{display:block}
   </div>
 </div>
 
+<div class="stripw" aria-hidden="true"><div class="track"><span>6 motif pastel</span><span>✦</span><span>Polyester ringan 20 gram</span><span>✦</span><span>Dicek satu per satu</span><span>✦</span><span>Pesan lewat WhatsApp</span><span>✦</span><span>Kurir JNE, J&amp;T, SiCepat</span><span>✦</span><span>6 motif pastel</span><span>✦</span><span>Polyester ringan 20 gram</span><span>✦</span><span>Dicek satu per satu</span><span>✦</span><span>Pesan lewat WhatsApp</span><span>✦</span><span>Kurir JNE, J&amp;T, SiCepat</span><span>✦</span></div></div>
 <main>
 <section id="pilih">
   <div class="wrap">
-    <h2>Pilih motif pouch kamu</h2>
+    <h2>Pilih motif <em>pouch</em> kamu</h2>
     <p class="lead">Enam motif pastel dengan ukuran dan bahan yang sama. Motif yang kamu pilih adalah motif yang kami kirim.</p>
     <div class="grid">
       <article class="card">
@@ -212,9 +310,9 @@ footer a{display:block}
   </div>
 </section>
 
-<section class="why" id="kualitas">
+<section class="dark" id="kualitas">
   <div class="wrap">
-    <h2>Dibuat untuk menjawab keluhan pembeli pouch</h2>
+    <h2>Dibuat untuk menjawab <em>keluhan</em> pembeli pouch</h2>
     <p class="lead">Kami membaca ulasan bintang 1–3 di toko lain. Salah satu keluhannya: kontrol kualitas tidak teliti, barang cacat tetap dikirim.</p>
     <div class="why-grid">
       <div class="why-item"><h3>Dicek satu per satu</h3><p>Setiap pouch diperiksa sebelum dikemas: jahitan, resleting, dan motif.</p></div>
@@ -226,7 +324,7 @@ footer a{display:block}
 
 <section id="cara">
   <div class="wrap">
-    <h2>Cara pesan</h2>
+    <h2>Cara <em>pesan</em></h2>
     <p class="lead">Tidak perlu membuat akun. Pesan selesai dalam beberapa langkah.</p>
     <ol class="steps">
       <li>Pilih motif dan masukkan ke keranjang.</li>
@@ -238,7 +336,7 @@ footer a{display:block}
 </section>
 <section id="info">
   <div class="wrap">
-    <h2>Spesifikasi dan pembayaran</h2>
+    <h2>Spesifikasi dan <em>pembayaran</em></h2>
     <p class="lead" style="margin-top:20px">Pouch mini berbahan polyester dengan resleting dan gantungan cincin untuk menyimpan make up, kabel, dan barang kecil. Ringan (hanya 20 gram), muat di tas kecil, dan diperiksa satu per satu sebelum dikirim.</p>
     <ul class="spec">
       <li><b>Bahan:</b> Polyester</li>
@@ -253,15 +351,17 @@ footer a{display:block}
     </ul>
     <p style="margin-top:20px">Pembayaran lewat transfer bank, QRIS, atau e-wallet setelah kamu konfirmasi pesanan di WhatsApp. Kami tidak meminta data kartu atau kata sandi apa pun. Detail lengkap ada di <a href="#kebijakan">halaman kebijakan</a>.</p>
     <div class="pay"><span>Transfer bank</span><span>QRIS</span><span>E-wallet</span></div>
+    <p><strong>Kurir aktif:</strong> pilih saat checkout. Ongkir di keranjang adalah perkiraan, ongkir final dikonfirmasi lewat WhatsApp.</p>
+    <div class="pay"><span>JNE Reguler</span><span>J&amp;T Express</span><span>SiCepat REG</span><span>Ambil di tempat</span></div>
   </div>
 </section>
 
-<section class="why" id="ulasan">
+<section class="rv" id="ulasan">
   <div class="wrap">
-    <h2>Kata pembeli</h2>
+    <h2>Kata <em>pembeli</em></h2>
     <p class="lead">Contoh ulasan untuk keperluan tugas.</p>
     <div class="rev-grid">
-      <div class="rev"><p>Jahitannya rapi dan pegangannya kuat, muat make up lengkap.</p><strong>Rani, mahasiswi</strong></div>
+      <div class="rev"><p>Barangnya rapi tanpa cacat, muat make up lengkap.</p><strong>Rani, mahasiswi</strong></div>
       <div class="rev"><p>Motif daisy-nya sama persis dengan fotonya. Suka banget.</p><strong>Salsa, pelajar</strong></div>
       <div class="rev"><p>Pengiriman cepat dan dikemas aman. Pasti beli lagi.</p><strong>Dinda, mahasiswi</strong></div>
     </div>
@@ -270,8 +370,8 @@ footer a{display:block}
 
 <section id="tentang">
   <div class="wrap">
-    <h2>Tentang Lymore</h2>
-    <p class="lead">Lymore adalah toko aksesori kecil dari Salatiga, Jawa Tengah. Kami mulai dari satu pertanyaan: kenapa pouch yang lucu sering cepat rusak? Jawabannya kami buat sendiri, yaitu pouch mini dengan penguat dan jahitan yang lebih baik, untuk perempuan Gen Z yang aktif.</p>
+    <h2>Tentang <em>Lymore</em></h2>
+    <p class="lead">Lymore adalah toko aksesori kecil dari Salatiga, Jawa Tengah. Kami mulai dari satu pertanyaan: kenapa pouch yang lucu sering dikirim dalam keadaan cacat? Jawabannya kami buat sendiri, yaitu pouch mini yang diperiksa satu per satu sebelum dikirim, untuk perempuan Gen Z yang aktif.</p>
     <p><strong>Alamat:</strong> Jl. Contoh Raya No. 12, Salatiga, Jawa Tengah 50711.</p>
     <p><strong>Legalitas usaha:</strong> usaha perorangan (UMKM), NIB 0000000000000. Alamat dan NIB adalah data contoh untuk tugas.</p>
   </div>
@@ -279,22 +379,20 @@ footer a{display:block}
 
 <section class="why" id="kebijakan">
   <div class="wrap pol">
-    <h2>Kebijakan toko</h2>
+    <h2>Kebijakan <em>toko</em></h2>
     <p class="lead">Aturan pengiriman, retur, refund, privasi, dan pembayaran di Lymore. Terakhir diperbarui 8 November 2026.</p>
 
-<div class="pp" id="pengiriman">
-  <h3>Pengiriman</h3>
+<details class="pp" id="pengiriman" open><summary>Pengiriman</summary><div class="pbody">
   <ul>
     <li>Pesanan diproses 1–2 hari kerja setelah pembayaran dikonfirmasi.</li>
     <li>Dikirim lewat ekspedisi reguler seperti JNE, J&amp;T, atau SiCepat. Estimasi tiba 2–5 hari kerja, tergantung kota tujuan.</li>
-    <li>Berat satu pouch sekitar 20 gram dalam kemasan plastik OPP bening. Ongkos kirim dihitung saat konfirmasi dan ditanggung pembeli.</li>
+    <li>Berat satu pouch sekitar 20 gram dalam kemasan plastik OPP bening. Pilih kurir saat checkout (JNE, J&amp;T, SiCepat, atau ambil di tempat). Ongkos kirim ditanggung pembeli, dan angka di keranjang adalah perkiraan yang dikonfirmasi ulang lewat WhatsApp.</li>
     <li>Nomor resi dikirim lewat WhatsApp setelah paket diserahkan ke ekspedisi.</li>
     <li>Pastikan nama, nomor HP, dan alamat sudah benar. Kesalahan alamat dari pembeli di luar tanggung jawab kami.</li>
   </ul>
-</div>
+</div></details>
 
-<div class="pp" id="retur">
-  <h3>Retur dan penukaran</h3>
+<details class="pp" id="retur"><summary>Retur dan penukaran</summary><div class="pbody">
   <p>Kamu bisa mengajukan retur jika barang cacat, rusak, atau motif yang diterima tidak sesuai pesanan.</p>
   <ol>
     <li>Hubungi kami lewat WhatsApp maksimal 2 hari setelah barang diterima.</li>
@@ -303,20 +401,18 @@ footer a{display:block}
     <li>Kami mengirim pouch pengganti atau memproses refund sesuai pilihanmu.</li>
   </ol>
   <p class="box">Tidak bisa diretur: barang yang sudah dipakai atau dicuci, label dilepas, salah pilih motif oleh pembeli, atau selisih warna kecil akibat pengaturan layar.</p>
-</div>
+</div></details>
 
-<div class="pp" id="refund">
-  <h3>Refund</h3>
+<details class="pp" id="refund"><summary>Refund</summary><div class="pbody">
   <ul>
     <li>Pesanan dibatalkan sebelum dikirim: dana dikembalikan penuh.</li>
     <li>Retur disetujui: dana dikembalikan setelah barang kami terima dan periksa, dalam 1–3 hari kerja.</li>
     <li>Stok motif habis setelah pembayaran: kamu boleh memilih motif lain atau refund penuh.</li>
     <li>Refund dikirim lewat transfer bank atau e-wallet atas nama pembeli. Ongkir awal dikembalikan hanya jika kesalahan ada di pihak toko.</li>
   </ul>
-</div>
+</div></details>
 
-<div class="pp" id="privasi">
-  <h3>Privasi</h3>
+<details class="pp" id="privasi"><summary>Privasi</summary><div class="pbody">
   <ul>
     <li>Kami hanya meminta nama, nomor HP, dan alamat pengiriman, untuk memproses dan mengirim pesananmu.</li>
     <li>Data tidak dijual. Alamat dan nomor HP hanya dibagikan ke ekspedisi agar paket sampai.</li>
@@ -324,22 +420,20 @@ footer a{display:block}
     <li>Kami tidak pernah meminta kata sandi, PIN, atau kode OTP. Abaikan pesan yang mengatasnamakan Lymore dan meminta hal itu.</li>
     <li>Ingin datamu dihapus dari catatan pesanan kami? Hubungi kami lewat WhatsApp atau email.</li>
   </ul>
-</div>
+</div></details>
 
-<div class="pp" id="pembayaran">
-  <h3>Cara pembayaran</h3>
+<details class="pp" id="pembayaran"><summary>Cara pembayaran</summary><div class="pbody">
   <ol>
-    <li>Pilih motif, masukkan ke keranjang, lalu isi nama, nomor HP, dan alamat.</li>
+    <li>Pilih motif, masukkan ke keranjang, lalu isi nama, nomor HP, alamat, kurir, dan metode pembayaran.</li>
     <li>Tekan Checkout lewat WhatsApp. Kami membalas dengan total, ongkir, dan nomor pesanan.</li>
     <li>Bayar lewat salah satu metode di bawah, sesuai total yang kami konfirmasi.</li>
     <li>Kirim bukti pembayaran lewat WhatsApp. Pesanan diproses setelah bukti kami terima.</li>
   </ol>
   <p class="box"><strong>Transfer bank:</strong> Bank Contoh 1234567890 a.n. Lymore Store<br><strong>QRIS dan e-wallet:</strong> dikirim lewat WhatsApp saat konfirmasi<br><em>Nomor rekening di atas adalah data contoh untuk tugas.</em></p>
   <p>Bayar hanya ke rekening atau QRIS yang kami kirim langsung di WhatsApp resmi toko. Kami tidak menerima pembayaran lewat tautan dari pihak lain.</p>
-</div>
+</div></details>
 
-<div class="pp" id="legalitas">
-  <h3>Legalitas dan alamat</h3>
+<details class="pp" id="legalitas"><summary>Legalitas dan alamat</summary><div class="pbody">
   <ul>
     <li><strong>Nama usaha:</strong> Lymore Store (usaha perorangan, UMKM)</li>
     <li><strong>NIB:</strong> 0000000000000 (contoh)</li>
@@ -347,7 +441,7 @@ footer a{display:block}
     <li><strong>Kontak:</strong> WhatsApp 0812-3456-7890, halo.lymore@example.com</li>
   </ul>
   <p>NIB, alamat, dan kontak di halaman ini adalah data contoh untuk keperluan tugas.</p>
-</div>
+</div></details>
 
   </div>
 </section>
@@ -372,11 +466,25 @@ footer a{display:block}
   </div>
   <div id="items" style="flex:1;overflow:auto;margin:10px 0"></div>
   <div>
-    <p class="total" style="color:var(--plum)">Total <span id="ctotal">Rp0</span></p>
+    <div class="sum"><span>Subtotal</span><span id="csub">Rp0</span></div>
+    <div class="sum"><span>Ongkir (perkiraan)</span><span id="cong">Rp0</span></div>
+    <p class="total sum" style="color:var(--plum)"><span>Total</span><span id="ctotal">Rp0</span></p>
     <div class="f">
       <label for="nm">Nama</label><input id="nm" autocomplete="name">
       <label for="hp">No. HP</label><input id="hp" inputmode="tel" autocomplete="tel">
       <label for="al">Alamat lengkap</label><textarea id="al" rows="3" autocomplete="street-address"></textarea>
+      <label for="kr">Kurir</label>
+      <select id="kr">
+        <option value="JNE Reguler|10000">JNE Reguler – Rp10.000 (2–4 hari)</option>
+        <option value="J&amp;T Express|9000">J&amp;T Express – Rp9.000 (2–4 hari)</option>
+        <option value="SiCepat REG|9500">SiCepat REG – Rp9.500 (2–3 hari)</option>
+        <option value="Ambil di tempat (Salatiga)|0">Ambil di tempat (Salatiga) – Rp0</option>
+      </select>
+      <fieldset style="border:0;padding:0;margin-top:10px"><legend style="font-weight:500">Metode pembayaran</legend>
+        <label class="opt"><input type="radio" name="bayar" value="Transfer bank" checked> Transfer bank</label>
+        <label class="opt"><input type="radio" name="bayar" value="QRIS"> QRIS</label>
+        <label class="opt"><input type="radio" name="bayar" value="E-wallet (DANA/OVO/GoPay)"> E-wallet (DANA, OVO, GoPay)</label>
+      </fieldset>
     </div>
     <p id="err" role="alert" style="color:#a1223a;min-height:1.4em;margin:6px 0"></p>
     <button type="button" class="btn" id="checkout" style="width:100%">Checkout lewat WhatsApp</button>
@@ -404,7 +512,8 @@ document.querySelectorAll('img[data-i]').forEach(function(i){i.src=IMG[i.dataset
 
   function render(){
     $("cnt").textContent = count();
-    $("ctotal").textContent = rupiah(total());
+    var ong = cart.length ? Number($("kr").value.split("|")[1]) : 0;
+    $("csub").textContent = rupiah(total()); $("cong").textContent = rupiah(ong); $("ctotal").textContent = rupiah(total() + ong);
     var box = $("items"); box.textContent = "";
     if(!cart.length){ var e = document.createElement("p"); e.textContent = "Keranjang masih kosong."; box.appendChild(e); return; }
     cart.forEach(function(c, i){
@@ -436,6 +545,7 @@ document.querySelectorAll('img[data-i]').forEach(function(i){i.src=IMG[i.dataset
       setTimeout(function(){ b.textContent = t; }, 1200);
     });
   });
+  $("kr").addEventListener("change", render);
   $("openCart").addEventListener("click", open);
   $("closeCart").addEventListener("click", close);
   $("ov").addEventListener("click", close);
@@ -447,8 +557,10 @@ document.querySelectorAll('img[data-i]').forEach(function(i){i.src=IMG[i.dataset
     if(!nm || !hp || !al){ $("err").textContent = "Lengkapi nama, nomor HP, dan alamat dulu."; return; }
     $("err").textContent = "";
     var baris = cart.map(function(c){ return "- Pouch Mini " + c.w + " x" + c.q + " (" + rupiah(c.p * c.q) + ")"; }).join("\n");
-    var teks = "Halo Lymore, saya mau pesan:\n" + baris + "\nTotal: " + rupiah(total()) +
-               " (belum termasuk ongkir)\nNama: " + nm + "\nNo. HP: " + hp + "\nAlamat: " + al;
+    var kr = $("kr").value.split("|"), bayar = document.querySelector('input[name="bayar"]:checked').value, ong = Number(kr[1]);
+    var teks = "Halo Lymore, saya mau pesan:\n" + baris + "\nSubtotal: " + rupiah(total()) +
+               "\nKurir: " + kr[0] + " (ongkir perkiraan " + rupiah(ong) + ")\nTotal: " + rupiah(total() + ong) +
+               "\nPembayaran: " + bayar + "\nNama: " + nm + "\nNo. HP: " + hp + "\nAlamat: " + al;
     window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(teks), "_blank", "noopener");
   });
 
